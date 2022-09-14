@@ -1,0 +1,6 @@
+DoubleHunt = true
+ScreenHeight = 810
+ScreenWidth = 1440
+BorderType = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\borderTypes\White.PNG
+LeftGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\FireTypeHex.JPG
+RightGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\WaterTypeHex.JPG

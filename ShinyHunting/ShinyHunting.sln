@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShinyHunting", "ShinyHunting\ShinyHunting.csproj", "{420D7143-0710-4D23-9166-877EC1AF27DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{420D7143-0710-4D23-9166-877EC1AF27DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{420D7143-0710-4D23-9166-877EC1AF27DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{420D7143-0710-4D23-9166-877EC1AF27DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{420D7143-0710-4D23-9166-877EC1AF27DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AE3A032-B047-43B7-9AB9-4F53A7D0211D}
+	EndGlobalSection
+EndGlobal
