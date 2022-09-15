@@ -45,40 +45,53 @@ namespace ShinyHunting
         public double VerticalBorderWidth    { get { return Convert.ToDouble(this.LayoutSettings.GetDoubleHuntSettings()["VerticalBorderWidth"]);} }
         public double HorizontalBorderHeight { get { return Convert.ToDouble(this.LayoutSettings.GetDoubleHuntSettings()["HorizontalBorderHeight"]);} }
         public double HorizontalBorderWidth  { get { return Convert.ToDouble(this.LayoutSettings.GetDoubleHuntSettings()["HorizontalBorderWidth"]);} }
-        
+
+        // Graphic Heights and Widths
+        public double GraphicHeight { get { return Convert.ToDouble(this.LayoutSettings.GetDoubleHuntSettings()["GraphicHeight"]); } }
+        public double GraphicWidth { get { return Convert.ToDouble(this.LayoutSettings.GetDoubleHuntSettings()["GraphicWidth"]); } }
+
         // Border Positioning based on X/Y Coordinates
         // Screen One = Left Screen
         // Screen Two = Right Screen
 
         // Positioning for Screen One
-        public double ScreenOne_LeftVerticalBorder_PositionX  { get { return Convert.ToDouble(0);} }
+        public double ScreenOne_LeftVerticalBorder_PositionX  { get { return Convert.ToDouble(this.ScreenWidth * 0.0182291667);} }
         public double ScreenOne_LeftVerticalBorder_PositionY { get { return Convert.ToDouble(0); } }
 
-        public double ScreenOne_RightVerticalBorder_PositionX { get { return (this.ScreenWidth / 2) - 10;} }
+        public double ScreenOne_RightVerticalBorder_PositionX { get { return Convert.ToDouble(this.ScreenWidth * 0.4765625); } }
         public double ScreenOne_RightVerticalBorder_PositionY { get { return Convert.ToDouble(0); } }
 
-        public double ScreenOne_UpperHorizontalBorder_PositionX { get { return Convert.ToDouble(0); } }
+        public double ScreenOne_UpperHorizontalBorder_PositionX { get { return Convert.ToDouble(this.ScreenWidth * 0.0182291667); } }
         public double ScreenOne_UppertHorizontalBorder_PositionY { get { return Convert.ToDouble(0); } }
 
-        public double ScreenOne_LowerHorizontalBorder_PositionX { get { return (0); } }
+        public double ScreenOne_LowerHorizontalBorder_PositionX { get { return Convert.ToDouble(this.ScreenWidth * 0.0182291667); } }
         public double ScreenOne_LowerHorizontalBorder_PositionY { get { return this.VerticalBorderHeight; } }
 
         // Positioning for Screen Two
-        public double ScreenTwo_LeftVerticalBorder_PositionX { get { return (this.ScreenWidth / 2) + 10;} }
+        public double ScreenTwo_LeftVerticalBorder_PositionX { get { return Convert.ToDouble(this.ScreenWidth * 0.5234375) - this.VerticalBorderWidth; } }
         public double ScreenTwo_LeftVerticalBorder_PositionY { get { return Convert.ToDouble(0);} }
 
-        public double ScreenTwo_RightVerticalBorder_PositionX { get { return this.ScreenWidth;} }
+        public double ScreenTwo_RightVerticalBorder_PositionX { get { return Convert.ToDouble(this.ScreenWidth * 0.981770833) - this.VerticalBorderWidth; } }
         public double ScreenTwo_RightVerticalBorder_PositionY { get { return Convert.ToDouble(0);} }
 
-        public double ScreenTwo_UpperHorizontalBorder_PositionX { get { return (this.ScreenWidth / 2) + 10;} }
+        public double ScreenTwo_UpperHorizontalBorder_PositionX { get { return Convert.ToDouble(this.ScreenWidth * 0.5234375) - this.VerticalBorderWidth; } }
         public double ScreenTwo_UppertHorizontalBorder_PositionY { get { return Convert.ToDouble(0);} }
 
-        public double ScreenTwo_LowerHorizontalBorder_PositionX { get { return (this.ScreenWidth / 2) + 10; } }
+        public double ScreenTwo_LowerHorizontalBorder_PositionX { get { return Convert.ToDouble(this.ScreenWidth * 0.5234375) - this.VerticalBorderWidth; } }
         public double ScreenTwo_LowerHorizontalBorder_PositionY { get { return this.VerticalBorderHeight;} }
 
+        // Positioning for Left and Right Graphics
+        public double GraphicOne__PositionX { get { return 0; } }
+        public double GraphicOne__PositionY { get { return this.VerticalBorderHeight + this.HorizontalBorderHeight; } }
+
+        public double GraphicTwo__PositionX { get { return (this.ScreenWidth / 2) + 10; } }
+        public double GraphicTwo__PositionY { get { return this.VerticalBorderHeight + this.HorizontalBorderHeight; } }
 
         // Accessing Graphics Paths
+        public string LeftGraphic { get { return this.LayoutSettings.GetGraphicSettings()["LeftGraphic"]; } }
+        public string RightGraphic { get { return this.LayoutSettings.GetGraphicSettings()["RightGraphic"]; } }
         public string BorderType { get { return this.LayoutSettings.GetGraphicSettings()["BorderType"];} }
+
 
 
 

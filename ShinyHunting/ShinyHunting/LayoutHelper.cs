@@ -12,10 +12,14 @@ namespace ShinyHunting
         private Dictionary<string, string> DoubleHuntSettings = new Dictionary<string, string>();
         private Dictionary<string, string> GraphicSettings = new Dictionary<string, string>();
 
+        private double ScreenWidth;
+        private double ScreenHeight;
+
         // Constructor
         public LayoutHelper()
         {
             this.ReadLaunchFileSettings();
+
             this.AssignDoubleHuntSettings();
             this.AssignGraphicSettings();
         }
@@ -28,27 +32,37 @@ namespace ShinyHunting
             string path = "../../../LaunchSettings.txt";
             this.LaunchSettings = File.ReadAllLines(path).Select(x => x.Split(" = ")).ToDictionary(x => x[0], x => x[1]);
 
+            this.ScreenHeight = Convert.ToDouble(this.LaunchSettings["ScreenHeight"]);
+            this.ScreenWidth = Convert.ToDouble(this.LaunchSettings["ScreenWidth"]);
+         
+
         }
 
         public void AssignGraphicSettings()
         {
+            this.GraphicSettings.Add("LeftGraphic", this.LaunchSettings["LeftGraphic"]);
+            this.GraphicSettings.Add("RightGraphic", this.LaunchSettings["RightGraphic"]);
             this.GraphicSettings.Add("BorderType", this.LaunchSettings["BorderType"]);
+
+            // Assigns values for display borders
+            double GraphicHeight = this.ScreenHeight / 2;
+            double GraphicWidth = this.ScreenWidth / 2;
+            this.DoubleHuntSettings.Add("GraphicHeight", GraphicHeight.ToString());
+            this.DoubleHuntSettings.Add("GraphicWidth", GraphicWidth.ToString());
+
         }
 
         public void AssignDoubleHuntSettings()
         {
-            // Assigns values for screen height and width
-            double screenHeight = Convert.ToDouble(this.LaunchSettings["ScreenHeight"]);
-            double screenWidth = Convert.ToDouble(this.LaunchSettings["ScreenWidth"]);
 
             // Assigns values for display borders
-            double verticalBorderHeight = screenHeight / 2;
+            double verticalBorderHeight = this.ScreenHeight * 0.6296296;
             double verticalBorderWidth = 15 / 1;
             this.DoubleHuntSettings.Add("VerticalBorderHeight", verticalBorderHeight.ToString());
             this.DoubleHuntSettings.Add("VerticalBorderWidth", verticalBorderWidth.ToString());
 
             double horizontalBorderHeight = 15 / 1;
-            double horizontalBorderWidth = screenWidth / 2;
+            double horizontalBorderWidth = (this.ScreenWidth * 0.45833) + horizontalBorderHeight;
             this.DoubleHuntSettings.Add("HorizontalBorderHeight", horizontalBorderHeight.ToString());
             this.DoubleHuntSettings.Add("HorizontalBorderWidth", horizontalBorderWidth.ToString());
         }
