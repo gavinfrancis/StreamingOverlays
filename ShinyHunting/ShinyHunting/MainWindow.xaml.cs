@@ -46,6 +46,9 @@ namespace ShinyHunting
         public double HorizontalBorderHeight { get { return Convert.ToDouble(this.LayoutSettings.GetDoubleHuntSettings()["HorizontalBorderHeight"]);} }
         public double HorizontalBorderWidth  { get { return Convert.ToDouble(this.LayoutSettings.GetDoubleHuntSettings()["HorizontalBorderWidth"]);} }
 
+        public double CroppedBackgroundGraphicHeight { get { return Convert.ToDouble(this.LayoutSettings.GetDoubleHuntSettings()["CroppedBackgroundGraphicHeight"]); } }
+        public double CroppedBackgroundGraphicWidth { get { return Convert.ToDouble(this.LayoutSettings.GetDoubleHuntSettings()["CroppedBackgroundGraphicWidth"]); } }
+
         // Graphic Heights and Widths
         public double GraphicHeight { get { return Convert.ToDouble(this.LayoutSettings.GetDoubleHuntSettings()["GraphicHeight"]); } }
         public double GraphicWidth { get { return Convert.ToDouble(this.LayoutSettings.GetDoubleHuntSettings()["GraphicWidth"]); } }
@@ -81,17 +84,35 @@ namespace ShinyHunting
         public double ScreenTwo_LowerHorizontalBorder_PositionY { get { return this.VerticalBorderHeight;} }
 
         // Positioning for Left and Right Graphics
-        public double GraphicOne__PositionX { get { return 0; } }
-        public double GraphicOne__PositionY { get { return this.VerticalBorderHeight + this.HorizontalBorderHeight; } }
+        public double GraphicOne_PositionX { get { return 0; } }
+        public double GraphicOne_PositionY { get { return this.VerticalBorderHeight + this.HorizontalBorderHeight; } }
 
-        public double GraphicTwo__PositionX { get { return (this.ScreenWidth / 2) + 10; } }
-        public double GraphicTwo__PositionY { get { return this.VerticalBorderHeight + this.HorizontalBorderHeight; } }
+        public double GraphicTwo_PositionX { get { return (this.ScreenWidth / 2); } }
+        public double GraphicTwo_PositionY { get { return this.VerticalBorderHeight + this.HorizontalBorderHeight; } }
+
+
+        public double CroppedGraphicSideLeft_Position_X { get { return Convert.ToDouble(0); } }
+        public double CroppedGraphicMiddleLeft_Position_X { get { return Convert.ToDouble(this.ScreenWidth * 0.484375); } }
+        public double CroppedGraphicMiddleRight_Position_X { get { return Convert.ToDouble(this.ScreenWidth * 0.5); } }
+        public double CroppedGraphicSideRight_Position_X { get { return Convert.ToDouble(this.ScreenWidth * 0.9817708333333333); } }
+
+
+
+        // Temp Test
+        public string CroppedGraphicSide{ get { return (0.ToString() + " " + 0.ToString() + " " + this.CroppedBackgroundGraphicWidth.ToString() + " " + this.CroppedBackgroundGraphicHeight.ToString()); } }
+        public string CroppedGraphicMiddle { get { return (0.ToString() + " " + 0.ToString() + " " + (30).ToString() + " " + this.CroppedBackgroundGraphicHeight.ToString()); } }
+
 
         // Accessing Graphics Paths
         public string LeftGraphic { get { return this.LayoutSettings.GetGraphicSettings()["LeftGraphic"]; } }
         public string RightGraphic { get { return this.LayoutSettings.GetGraphicSettings()["RightGraphic"]; } }
-        public string BorderType { get { return this.LayoutSettings.GetGraphicSettings()["BorderType"];} }
+        public string LeftCroppedGraphic { get { return this.LayoutSettings.GetGraphicSettings()["LeftCroppedGraphic"]; } }
+        public string RightCroppedGraphic { get { return this.LayoutSettings.GetGraphicSettings()["RightCroppedGraphic"]; } }
 
+        public string PokeBallGraphic { get { return this.LayoutSettings.GetGraphicSettings()["PokeballGraphic"]; } }
+
+        public string TestGraphic { get { return this.LayoutSettings.GetGraphicSettings()["TestGraphic"]; } }
+        public string BorderType { get { return this.LayoutSettings.GetGraphicSettings()["BorderType"];} }
 
 
 

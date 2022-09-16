@@ -42,6 +42,12 @@ namespace ShinyHunting
         {
             this.GraphicSettings.Add("LeftGraphic", this.LaunchSettings["LeftGraphic"]);
             this.GraphicSettings.Add("RightGraphic", this.LaunchSettings["RightGraphic"]);
+            this.GraphicSettings.Add("LeftCroppedGraphic", this.LaunchSettings["LeftCroppedGraphic"]);
+            this.GraphicSettings.Add("RightCroppedGraphic", this.LaunchSettings["RightCroppedGraphic"]);
+            this.GraphicSettings.Add("PokeballGraphic", this.LaunchSettings["PokeballGraphic"]);
+            
+            this.GraphicSettings.Add("TestGraphic", this.LaunchSettings["TestGraphic"]);
+
             this.GraphicSettings.Add("BorderType", this.LaunchSettings["BorderType"]);
 
             // Assigns values for display borders
@@ -65,6 +71,12 @@ namespace ShinyHunting
             double horizontalBorderWidth = (this.ScreenWidth * 0.45833) + horizontalBorderHeight;
             this.DoubleHuntSettings.Add("HorizontalBorderHeight", horizontalBorderHeight.ToString());
             this.DoubleHuntSettings.Add("HorizontalBorderWidth", horizontalBorderWidth.ToString());
+
+            double croppedBackgroundGraphicHeight = this.ScreenHeight * 0.6535185185185185;
+            double croppedBackgroundGraphicWidth = this.ScreenWidth * 0.0182291666666667;
+
+            this.DoubleHuntSettings.Add("CroppedBackgroundGraphicHeight", croppedBackgroundGraphicHeight.ToString());
+            this.DoubleHuntSettings.Add("CroppedBackgroundGraphicWidth", croppedBackgroundGraphicWidth.ToString());
         }
 
         public Dictionary<string, string> GetGraphicSettings()

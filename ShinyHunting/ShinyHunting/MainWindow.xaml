@@ -25,16 +25,52 @@
         <Image Stretch="Fill" Width="{Binding HorizontalBorderWidth}" Height="{Binding HorizontalBorderHeight}" Canvas.Top="{Binding ScreenTwo_LowerHorizontalBorder_PositionY}"   Canvas.Left="{Binding ScreenTwo_LowerHorizontalBorder_PositionX}"    Source="{Binding BorderType}"/>
         <!-- ****** Screen Two Border Settings ******-->
 
-        <!-- ****** Left and Right Graphic Settings ******-->
-        <Image Stretch="Fill" Width="{Binding GraphicWidth}" Height="{Binding GraphicHeight}" Canvas.Top="{Binding GraphicOne__PositionY}"   Canvas.Left="{Binding GraphicOne__PositionX}"    Source="{Binding LeftGraphic}"/>
-        <Image Source="{Binding LeftGraphic}">
+
+
+        <!-- ****** Cropped Subsections of Background Graphics ******-->
+        <Image Stretch="Fill" Canvas.Top="0" Canvas.Left="{Binding CroppedGraphicSideLeft_Position_X}" Source="{Binding LeftCroppedGraphic}">
             <Image.Clip>
-                <RectangleGeometry Rect="0 0 35 1200" />
+                <RectangleGeometry Rect="{Binding CroppedGraphicSide}" />
             </Image.Clip>
         </Image>
-        <Image Stretch="Fill" Width="{Binding GraphicWidth}" Height="{Binding GraphicHeight}" Canvas.Top="{Binding GraphicTwo__PositionY}"   Canvas.Left="{Binding GraphicTwo__PositionX}"    Source="{Binding RightGraphic}"/>
+
+        <Image Canvas.Top="0" Canvas.Left="{Binding CroppedGraphicMiddleLeft_Position_X}" Source="{Binding LeftCroppedGraphic}">
+            <Image.Clip>
+                <RectangleGeometry Rect="{Binding CroppedGraphicMiddle}" />
+            </Image.Clip>
+        </Image>
+
+        <Image Canvas.Top="0" Canvas.Left="{Binding CroppedGraphicMiddleRight_Position_X}" Source="{Binding RightCroppedGraphic}">
+            <Image.Clip>
+                <RectangleGeometry Rect="{Binding CroppedGraphicMiddle}" />
+            </Image.Clip>
+        </Image>
+
+        <Image Canvas.Top="0" Canvas.Left="{Binding CroppedGraphicSideRight_Position_X}" Source="{Binding RightCroppedGraphic}">
+            <Image.Clip>
+                <RectangleGeometry Rect="{Binding CroppedGraphicSide}" />
+            </Image.Clip>
+        </Image>
+        <!-- ****** Cropped Subsections of Background Graphics ******-->
+
+        <!-- ****** Left and Right Graphic Settings ******-->
+        <Image Stretch="Fill" Width="{Binding GraphicWidth}" Height="{Binding GraphicHeight}" Canvas.Top="{Binding GraphicOne_PositionY}"   Canvas.Left="{Binding GraphicOne_PositionX}"    Source="{Binding LeftGraphic}"/>
+        <Image Stretch="Fill" Width="{Binding GraphicWidth}" Height="{Binding GraphicHeight}" Canvas.Top="{Binding GraphicTwo_PositionY}"   Canvas.Left="{Binding GraphicTwo_PositionX}"    Source="{Binding RightGraphic}"/>
         <!-- ****** Left and Right Graphic Settings ******-->
 
+        <!-- ****** Hunt Graphic Settings ******-->
+        <Image  Width="375" Height="375" Canvas.Top="750"  Canvas.Left="300"    Source="{Binding PokeBallGraphic}">
+            <Image.RenderTransform>
+                <ScaleTransform ScaleX="-1" />
+            </Image.RenderTransform>
+        </Image>
+        <Image  Width="375" Height="375" Canvas.Top="750"  Canvas.Left="1500"    Source="{Binding PokeBallGraphic}"/>
+        
+        
+        
+        <!-- ****** Hunt Graphic Settings  ******-->
+
+        
         <!--<TextBox Width="96" Height="400" Name="textBox1" Text="{Binding ScreenWidth}" /> -->
     </Canvas>
 </Window>
