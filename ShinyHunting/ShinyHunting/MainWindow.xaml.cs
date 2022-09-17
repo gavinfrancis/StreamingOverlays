@@ -33,6 +33,36 @@ namespace ShinyHunting
             InitializeComponent();
         }
 
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            var window = Window.GetWindow(this);
+            window.KeyDown += HandleKeyPress;
+        }
+
+        private void HandleKeyPress(object sender, KeyEventArgs e)
+        {
+            Debug.WriteLine(e.Key.ToString());
+            if (e.Key == Key.W)
+            {
+                currentCount.Content = Convert.ToInt32(currentCount.Content) + 1;
+            }
+
+            if (e.Key == Key.S)
+            {
+                currentCount.Content = Convert.ToInt32(currentCount.Content) - 1;
+            }
+
+            if (e.Key == Key.Up)
+            {
+                currentCount2.Content = Convert.ToInt32(currentCount2.Content) + 1;
+            }
+
+            if (e.Key == Key.Down)
+            {
+                currentCount2.Content = Convert.ToInt32(currentCount2.Content) - 1;
+            }
+        }
+
         // ********************************************************** //
         // Getters that are accessed within the Main Display Window   //
         // ********************************************************** //
@@ -113,22 +143,11 @@ namespace ShinyHunting
         public string TestGraphic { get { return this.LayoutSettings.GetGraphicSettings()["TestGraphic"]; } }
         public string BorderType { get { return this.LayoutSettings.GetGraphicSettings()["BorderType"];} }
 
-        
-
 
         // Code that allows the Window to be draggable
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
-        }
-
-        private void OnKeyDownHandler(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Space)
-            {
-                currentCount.Content = 1000;
-                Debug.WriteLine("Hi");
-            }
         }
 
         //Below is the boilerplate code supporting PropertyChanged events:

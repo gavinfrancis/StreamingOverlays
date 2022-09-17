@@ -11,7 +11,9 @@
         MouseLeftButtonDown="Window_MouseLeftButtonDown" 
       Background="Transparent">
     <Canvas Width="1920" Height="1080" x:Name="RootLayout">
-        
+
+        <UserControl Loaded="UserControl_Loaded"></UserControl>
+
         <!-- ****** Screen One Border Settings ******-->
         <Image Stretch="Fill" Width="{Binding VerticalBorderWidth}"   Height="{Binding VerticalBorderHeight}"   Canvas.Top="{Binding ScreenOne_LeftVerticalBorder_PositionY}"      Canvas.Left="{Binding ScreenOne_LeftVerticalBorder_PositionX}"       Source="{Binding BorderType}"/>
         <Image Stretch="Fill" Width="{Binding VerticalBorderWidth}"   Height="{Binding VerticalBorderHeight}"   Canvas.Top="{Binding ScreenOne_RightVerticalBorder_PositionY}"     Canvas.Left="{Binding ScreenOne_RightVerticalBorder_PositionX}"      Source="{Binding BorderType}"/>
@@ -85,7 +87,7 @@
             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
 
         <Label x:Name="currentCount2" Width="226" Height="68" Canvas.Left="1545" Canvas.Top="795" FontSize="32" FontFamily="Franklin Gothic" Content="5678"  
-            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" KeyDown="OnKeyDownHandler" Foreground="White"/>
+            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
         <!-- ****** Hunt Graphic Settings  ******-->
     </Canvas>
 </Window>
