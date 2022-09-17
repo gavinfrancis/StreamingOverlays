@@ -34,8 +34,6 @@ namespace ShinyHunting
 
             this.ScreenHeight = Convert.ToDouble(this.LaunchSettings["ScreenHeight"]);
             this.ScreenWidth = Convert.ToDouble(this.LaunchSettings["ScreenWidth"]);
-         
-
         }
 
         public void AssignGraphicSettings()

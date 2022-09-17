@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -96,9 +97,7 @@ namespace ShinyHunting
         public double CroppedGraphicMiddleRight_Position_X { get { return Convert.ToDouble(this.ScreenWidth * 0.5); } }
         public double CroppedGraphicSideRight_Position_X { get { return Convert.ToDouble(this.ScreenWidth * 0.9817708333333333); } }
 
-
-
-        // Temp Test
+        // Edit Later
         public string CroppedGraphicSide{ get { return (0.ToString() + " " + 0.ToString() + " " + this.CroppedBackgroundGraphicWidth.ToString() + " " + this.CroppedBackgroundGraphicHeight.ToString()); } }
         public string CroppedGraphicMiddle { get { return (0.ToString() + " " + 0.ToString() + " " + (30).ToString() + " " + this.CroppedBackgroundGraphicHeight.ToString()); } }
 
@@ -114,12 +113,22 @@ namespace ShinyHunting
         public string TestGraphic { get { return this.LayoutSettings.GetGraphicSettings()["TestGraphic"]; } }
         public string BorderType { get { return this.LayoutSettings.GetGraphicSettings()["BorderType"];} }
 
+        
 
 
         // Code that allows the Window to be draggable
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
+        }
+
+        private void OnKeyDownHandler(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Space)
+            {
+                currentCount.Content = 1000;
+                Debug.WriteLine("Hi");
+            }
         }
 
         //Below is the boilerplate code supporting PropertyChanged events:

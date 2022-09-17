@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "94EAbisgP17/36ASSjkbK3YhbFqgWtfazG3ESXUxMHZ24VRt0pIPRXU4450RpqdxPSlRvFOxa3g8+cQ+9Dtugw==",
+  "dgSpecHash": "5IvSFa44t0ogHjs+ibIpvVNWHIMUewYQlLe8iIYCa0ofGc0aDtP5vmQvfmgv1uVgAL4KIj4BlHWlk0JZATqpeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\gavin\\OneDrive\\Desktop\\Twitch\\Software\\StreamingOverlays\\ShinyHunting\\ShinyHunting\\ShinyHunting.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\gavin\\.nuget\\packages\\wpfanimatedgif\\2.0.2\\wpfanimatedgif.2.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

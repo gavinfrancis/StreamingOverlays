@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:ShinyHunting"
         mc:Ignorable="d"
         Height="1080" Width="1920" WindowStyle="None"  
@@ -58,19 +59,33 @@
         <Image Stretch="Fill" Width="{Binding GraphicWidth}" Height="{Binding GraphicHeight}" Canvas.Top="{Binding GraphicTwo_PositionY}"   Canvas.Left="{Binding GraphicTwo_PositionX}"    Source="{Binding RightGraphic}"/>
         <!-- ****** Left and Right Graphic Settings ******-->
 
+        <!-- ****** Face Camera Border Settings ******-->
+        <!-- <Image Stretch="Fill" Width="15" Height="250" Canvas.Top="750" Canvas.Left="750" Source="{Binding BorderType}"/> -->
+        <!-- <Image Stretch="Fill" Width="15" Height="250" Canvas.Top="750" Canvas.Left="1150" Source="{Binding BorderType}"/> -->
+        <!-- ****** Face Camera Border Settings ******-->
+
+
         <!-- ****** Hunt Graphic Settings ******-->
-        <Image  Width="375" Height="375" Canvas.Top="750"  Canvas.Left="300"    Source="{Binding PokeBallGraphic}">
+        <Image Width="375" Height="375" Canvas.Top="700" Canvas.Left="550" Source="{Binding PokeBallGraphic}">
             <Image.RenderTransform>
                 <ScaleTransform ScaleX="-1" />
             </Image.RenderTransform>
         </Image>
-        <Image  Width="375" Height="375" Canvas.Top="750"  Canvas.Left="1500"    Source="{Binding PokeBallGraphic}"/>
-        
-        
-        
-        <!-- ****** Hunt Graphic Settings  ******-->
+        <Image  Width="375" Height="375" Canvas.Top="700"  Canvas.Left="1370" Source="{Binding PokeBallGraphic}"/>
 
-        
-        <!--<TextBox Width="96" Height="400" Name="textBox1" Text="{Binding ScreenWidth}" /> -->
+        <Image Width="170" Height="200" Canvas.Top="725" Canvas.Left="500" gif:ImageBehavior.AnimatedSource="C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\huntGraphics\Groudon.gif">
+            <Image.RenderTransform>
+                <ScaleTransform ScaleX="-1" />
+            </Image.RenderTransform>
+        </Image>
+        <Image Width="200" Height="250" Canvas.Top="725" Canvas.Left="1425" gif:ImageBehavior.AnimatedSource="C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\huntGraphics\Kyogre.gif"/>
+
+
+        <Label x:Name="currentCount" Width="226" Height="68" Canvas.Left="180" Canvas.Top="795" FontSize="32" FontFamily="Franklin Gothic" Content="4321"  
+            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+
+        <Label x:Name="currentCount2" Width="226" Height="68" Canvas.Left="1545" Canvas.Top="795" FontSize="32" FontFamily="Franklin Gothic" Content="5678"  
+            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" KeyDown="OnKeyDownHandler" Foreground="White"/>
+        <!-- ****** Hunt Graphic Settings  ******-->
     </Canvas>
 </Window>
