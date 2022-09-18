@@ -12,25 +12,28 @@
       Background="Transparent">
     <Canvas Width="1920" Height="1080" x:Name="RootLayout">
 
+        <!-- User Control Settings -->
         <UserControl Loaded="UserControl_Loaded"></UserControl>
-
-        <!-- ****** Screen One Border Settings ******-->
+        <!-- User Control Settings -->
+        
+        
+        <!-- Screen One Border Settings -->
         <Image Stretch="Fill" Width="{Binding VerticalBorderWidth}"   Height="{Binding VerticalBorderHeight}"   Canvas.Top="{Binding ScreenOne_LeftVerticalBorder_PositionY}"      Canvas.Left="{Binding ScreenOne_LeftVerticalBorder_PositionX}"       Source="{Binding BorderType}"/>
         <Image Stretch="Fill" Width="{Binding VerticalBorderWidth}"   Height="{Binding VerticalBorderHeight}"   Canvas.Top="{Binding ScreenOne_RightVerticalBorder_PositionY}"     Canvas.Left="{Binding ScreenOne_RightVerticalBorder_PositionX}"      Source="{Binding BorderType}"/>
-        <Image Stretch="Fill" Width="{Binding HorizontalBorderWidth}" Height="{Binding HorizontalBorderHeight}" Canvas.Top="{Binding ScreenOne_UpperHorizontalBorder_PositionY}"   Canvas.Left="{Binding ScreenOne_UpperHorizontalBorder_PositionX}"    Source="{Binding BorderType}"/>
-        <Image Stretch="Fill" Width="{Binding HorizontalBorderWidth}" Height="{Binding HorizontalBorderHeight}" Canvas.Top="{Binding ScreenOne_LowerHorizontalBorder_PositionY}"   Canvas.Left="{Binding ScreenOne_LowerHorizontalBorder_PositionX}"    Source="{Binding BorderType}"/>
-        <!-- ****** Screen One Border Settings ******-->
+        <Image Stretch="Fill" Width="{Binding HorizontalBorderWidth}" Height="{Binding HorizontalBorderHeightTop}" Canvas.Top="{Binding ScreenOne_UpperHorizontalBorder_PositionY}"   Canvas.Left="{Binding ScreenOne_UpperHorizontalBorder_PositionX}"    Source="{Binding BorderType}"/>
+        <Image Stretch="Fill" Width="{Binding HorizontalBorderWidth}" Height="{Binding HorizontalBorderHeightBottom}" Canvas.Top="{Binding ScreenOne_LowerHorizontalBorder_PositionY}"   Canvas.Left="{Binding ScreenOne_LowerHorizontalBorder_PositionX}"    Source="{Binding BorderType}"/>
+        <!--  Screen One Border Settings -->
 
-        <!-- ****** Screen Two Border Settings ******-->
+        
+        <!-- Screen Two Border Settings -->
         <Image Stretch="Fill" Width="{Binding VerticalBorderWidth}"   Height="{Binding VerticalBorderHeight}"   Canvas.Top="{Binding ScreenTwo_LeftVerticalBorder_PositionY}"      Canvas.Left="{Binding ScreenTwo_LeftVerticalBorder_PositionX}"       Source="{Binding BorderType}"/>
         <Image Stretch="Fill" Width="{Binding VerticalBorderWidth}"   Height="{Binding VerticalBorderHeight}"   Canvas.Top="{Binding ScreenTwo_RightVerticalBorder_PositionY}"     Canvas.Left="{Binding ScreenTwo_RightVerticalBorder_PositionX}"      Source="{Binding BorderType}"/>
-        <Image Stretch="Fill" Width="{Binding HorizontalBorderWidth}" Height="{Binding HorizontalBorderHeight}" Canvas.Top="{Binding ScreenTwo_UpperHorizontalBorder_PositionY}"   Canvas.Left="{Binding ScreenTwo_UpperHorizontalBorder_PositionX}"    Source="{Binding BorderType}"/>
-        <Image Stretch="Fill" Width="{Binding HorizontalBorderWidth}" Height="{Binding HorizontalBorderHeight}" Canvas.Top="{Binding ScreenTwo_LowerHorizontalBorder_PositionY}"   Canvas.Left="{Binding ScreenTwo_LowerHorizontalBorder_PositionX}"    Source="{Binding BorderType}"/>
-        <!-- ****** Screen Two Border Settings ******-->
+        <Image Stretch="Fill" Width="{Binding HorizontalBorderWidth}" Height="{Binding HorizontalBorderHeightTop}" Canvas.Top="{Binding ScreenTwo_UpperHorizontalBorder_PositionY}"   Canvas.Left="{Binding ScreenTwo_UpperHorizontalBorder_PositionX}"    Source="{Binding BorderType}"/>
+        <Image Stretch="Fill" Width="{Binding HorizontalBorderWidth}" Height="{Binding HorizontalBorderHeightBottom}" Canvas.Top="{Binding ScreenTwo_LowerHorizontalBorder_PositionY}"   Canvas.Left="{Binding ScreenTwo_LowerHorizontalBorder_PositionX}"    Source="{Binding BorderType}"/>
+        <!-- Screen Two Border Settings -->
 
-
-
-        <!-- ****** Cropped Subsections of Background Graphics ******-->
+        
+        <!-- Cropped Subsections of Background Graphics -->
         <Image Stretch="Fill" Canvas.Top="0" Canvas.Left="{Binding CroppedGraphicSideLeft_Position_X}" Source="{Binding LeftCroppedGraphic}">
             <Image.Clip>
                 <RectangleGeometry Rect="{Binding CroppedGraphicSide}" />
@@ -54,40 +57,71 @@
                 <RectangleGeometry Rect="{Binding CroppedGraphicSide}" />
             </Image.Clip>
         </Image>
-        <!-- ****** Cropped Subsections of Background Graphics ******-->
+        <!-- Cropped Subsections of Background Graphics -->
 
-        <!-- ****** Left and Right Graphic Settings ******-->
+        
+        <!-- Left and Right Graphic Initialization -->
         <Image Stretch="Fill" Width="{Binding GraphicWidth}" Height="{Binding GraphicHeight}" Canvas.Top="{Binding GraphicOne_PositionY}"   Canvas.Left="{Binding GraphicOne_PositionX}"    Source="{Binding LeftGraphic}"/>
         <Image Stretch="Fill" Width="{Binding GraphicWidth}" Height="{Binding GraphicHeight}" Canvas.Top="{Binding GraphicTwo_PositionY}"   Canvas.Left="{Binding GraphicTwo_PositionX}"    Source="{Binding RightGraphic}"/>
-        <!-- ****** Left and Right Graphic Settings ******-->
+        <!-- Left and Right Graphic Initialization -->
 
-        <!-- ****** Face Camera Border Settings ******-->
+        
+        <!-- Face Camera Border Settings -->
         <!-- <Image Stretch="Fill" Width="15" Height="250" Canvas.Top="750" Canvas.Left="750" Source="{Binding BorderType}"/> -->
         <!-- <Image Stretch="Fill" Width="15" Height="250" Canvas.Top="750" Canvas.Left="1150" Source="{Binding BorderType}"/> -->
-        <!-- ****** Face Camera Border Settings ******-->
+        <!-- <Image Stretch="Fill" Width="15" Height="250" Canvas.Top="750" Canvas.Left="750" Source="{Binding BorderType}"/> -->
+        <!-- <Image Stretch="Fill" Width="15" Height="250" Canvas.Top="750" Canvas.Left="1150" Source="{Binding BorderType}"/> -->
+        <!-- Face Camera Border Settings -->
 
-
-        <!-- ****** Hunt Graphic Settings ******-->
-        <Image Width="375" Height="375" Canvas.Top="700" Canvas.Left="550" Source="{Binding PokeBallGraphic}">
+        
+        <!-- Left and Right Background Pokeball Graphics -->
+        <Image Width="{Binding PokeballGraphicWidth}" Height="{Binding PokeballGraphicHeight}" Canvas.Top="{Binding PokeBallGraphicLeft_PositionY}" Canvas.Left="{Binding PokeBallGraphicLeft_PositionX}" Source="{Binding PokeBallGraphic}">
             <Image.RenderTransform>
                 <ScaleTransform ScaleX="-1" />
             </Image.RenderTransform>
         </Image>
-        <Image  Width="375" Height="375" Canvas.Top="700"  Canvas.Left="1370" Source="{Binding PokeBallGraphic}"/>
+        <Image  Width="{Binding PokeballGraphicWidth}" Height="{Binding PokeballGraphicWidth}" Canvas.Top="{Binding PokeBallGraphicRight_PositionY}"  Canvas.Left="{Binding PokeBallGraphicRight_PositionX}" Source="{Binding PokeBallGraphic}"/>
+        <!-- Left and Right Background Pokeball Graphics -->
 
-        <Image Width="170" Height="200" Canvas.Top="725" Canvas.Left="500" gif:ImageBehavior.AnimatedSource="C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\huntGraphics\Groudon.gif">
+
+        <!-- Animated Pokemon Gif Graphics -->
+        <Image Stretch="Fill" Width="{Binding PokemonOneWidth}" Height="{Binding PokemonOneHeight}" Canvas.Top="{Binding Pokemon_1_PositionY}" Canvas.Left="{Binding Pokemon_1_PositionX}" gif:ImageBehavior.AnimatedSource="{Binding CurrentPokemonOne}">
             <Image.RenderTransform>
                 <ScaleTransform ScaleX="-1" />
             </Image.RenderTransform>
         </Image>
-        <Image Width="200" Height="250" Canvas.Top="725" Canvas.Left="1425" gif:ImageBehavior.AnimatedSource="C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\huntGraphics\Kyogre.gif"/>
+        <Image Stretch="Fill" Width="{Binding PokemonTwoWidth}" Height="{Binding PokemonTwoHeight}" Canvas.Top="{Binding Pokemon_2_PositionY}" Canvas.Left="{Binding Pokemon_2_PositionX}" gif:ImageBehavior.AnimatedSource="{Binding CurrentPokemonTwo}"/>
+        <!-- Animated Pokemon Gif Graphics -->
 
 
-        <Label x:Name="currentCount" Width="226" Height="68" Canvas.Left="180" Canvas.Top="795" FontSize="32" FontFamily="Franklin Gothic" Content="4321"  
-            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+        <!-- Counter Settings -->
+        <Label x:Name="currentCount"
+               FontSize="32"
+               FontFamily="{Binding FontType}"
+               Content="{Binding CurrentCountOne}"
+               Width="{Binding TextCounterWidth}" 
+               Height="{Binding TextCounterHeight}" 
+               Canvas.Left="{Binding TextCounterLeft_PositionX}"
+               Canvas.Top="{Binding TextCounterLeft_PositionY}"  
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Foreground="White"
+        />
 
-        <Label x:Name="currentCount2" Width="226" Height="68" Canvas.Left="1545" Canvas.Top="795" FontSize="32" FontFamily="Franklin Gothic" Content="5678"  
-            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
-        <!-- ****** Hunt Graphic Settings  ******-->
+        <!-- Font Size binding doesn't work for some reason...-->
+        <Label x:Name="currentCount2"
+               FontSize="32"
+               FontFamily="{Binding FontType}"
+               Content="{Binding CurrentCountTwo}"  
+               Width="{Binding TextCounterWidth}"
+               Height="{Binding TextCounterHeight}"
+               Canvas.Left="{Binding TextCounterRight_PositionX}"
+               Canvas.Top="{Binding TextCounterRight_PositionY}"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Foreground="White"
+        />
+        <!-- Counter Settings -->
+        
     </Canvas>
 </Window>

@@ -1,0 +1,4 @@
+ScreenHeight = 1080
+ScreenWidth = 1920
+FontSize = 32
+FontType = Franklin Gothic

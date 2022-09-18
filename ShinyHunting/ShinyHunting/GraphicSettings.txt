@@ -1,9 +1,6 @@
-ScreenHeight = 1080
-ScreenWidth = 1920
-BorderType = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\borderTypes\Green.PNG
+﻿BorderType = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\borderTypes\Black.PNG
 LeftGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\FireTypeHex.JPG
 RightGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\WaterTypeHex.JPG
 LeftCroppedGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\FireTypeHex.JPG
 RightCroppedGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\WaterTypeHex.JPG
 PokeballGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\huntGraphics\pokeball.PNG
-TestGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\FireTypeHexTemp.JPG
