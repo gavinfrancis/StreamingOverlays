@@ -1,6 +1,6 @@
-﻿BorderType = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\borderTypes\Black.PNG
-LeftGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\FireTypeHex.JPG
-RightGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\WaterTypeHex.JPG
-LeftCroppedGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\FireTypeHex.JPG
-RightCroppedGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\WaterTypeHex.JPG
-PokeballGraphic = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\huntGraphics\pokeball.PNG
+﻿BorderType = C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\borderTypes\Black.PNG
+LeftGraphic = C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\FireTypeHex.JPG
+RightGraphic = C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\WaterTypeHex.JPG
+LeftCroppedGraphic = C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\FireTypeHex.JPG
+RightCroppedGraphic = C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\hexTypes\WaterTypeHex.JPG
+PokeballGraphic = C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\huntGraphics\pokeball.PNG

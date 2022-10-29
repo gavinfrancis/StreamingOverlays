@@ -1,0 +1,6 @@
+C:\Users\Gavin Francis\Desktop\Twitch\Overlay-Executables\ShinyHunting.exe
+C:\Users\Gavin Francis\Desktop\Twitch\Overlay-Executables\ShinyHunting.dll
+C:\Users\Gavin Francis\Desktop\Twitch\Overlay-Executables\ShinyHunting.deps.json
+C:\Users\Gavin Francis\Desktop\Twitch\Overlay-Executables\ShinyHunting.runtimeconfig.json
+C:\Users\Gavin Francis\Desktop\Twitch\Overlay-Executables\ShinyHunting.pdb
+C:\Users\Gavin Francis\Desktop\Twitch\Overlay-Executables\WpfAnimatedGif.dll

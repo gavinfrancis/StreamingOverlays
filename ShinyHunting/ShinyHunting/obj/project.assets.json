@@ -5,10 +5,14 @@
       "WpfAnimatedGif/2.0.2": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.0/WpfAnimatedGif.dll": {}
+          "lib/netcoreapp3.0/WpfAnimatedGif.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.0/WpfAnimatedGif.dll": {}
+          "lib/netcoreapp3.0/WpfAnimatedGif.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
@@ -44,19 +48,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gavin\\.nuget\\packages\\": {}
+    "C:\\Users\\Gavin Francis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gavin\\OneDrive\\Desktop\\Twitch\\Software\\StreamingOverlays\\ShinyHunting\\ShinyHunting\\ShinyHunting.csproj",
+      "projectUniqueName": "C:\\Users\\Gavin Francis\\Desktop\\Twitch\\Software\\StreamingOverlays\\ShinyHunting\\ShinyHunting\\ShinyHunting.csproj",
       "projectName": "ShinyHunting",
-      "projectPath": "C:\\Users\\gavin\\OneDrive\\Desktop\\Twitch\\Software\\StreamingOverlays\\ShinyHunting\\ShinyHunting\\ShinyHunting.csproj",
-      "packagesPath": "C:\\Users\\gavin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gavin\\OneDrive\\Desktop\\Twitch\\Software\\StreamingOverlays\\ShinyHunting\\ShinyHunting\\obj\\",
+      "projectPath": "C:\\Users\\Gavin Francis\\Desktop\\Twitch\\Software\\StreamingOverlays\\ShinyHunting\\ShinyHunting\\ShinyHunting.csproj",
+      "packagesPath": "C:\\Users\\Gavin Francis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gavin Francis\\Desktop\\Twitch\\Software\\StreamingOverlays\\ShinyHunting\\ShinyHunting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gavin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gavin Francis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -93,10 +97,29 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.30, 3.1.30]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -105,7 +128,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -33,9 +33,17 @@ namespace ShinyHunting
         public void ReadLaunchSettings()
         {
             // Read entire text file content in one string  
-            string huntSettingsPath = "../../../HuntSettings.txt";
-            string graphicSettingsPath = "../../../GraphicSettings.txt";
-            string overlaySettingsPath = "../../../OverlaySettings.txt";
+
+
+            // For Development Mode
+            // string huntSettingsPath = "../../../HuntSettings.txt";
+            // string graphicSettingsPath = "../../../GraphicSettings.txt";
+            // string overlaySettingsPath = "../../../OverlaySettings.txt";
+
+            // For Executable Mode
+            string huntSettingsPath = "Settings/HuntSettings.txt";
+            string graphicSettingsPath = "Settings/GraphicSettings.txt";
+            string overlaySettingsPath = "Settings/OverlaySettings.txt";
 
             this.HuntSettings = File.ReadAllLines(huntSettingsPath).Select(x => x.Split(" = ")).ToDictionary(x => x[0], x => x[1]);
             this.GraphicSettings = File.ReadAllLines(graphicSettingsPath).Select(x => x.Split(" = ")).ToDictionary(x => x[0], x => x[1]);

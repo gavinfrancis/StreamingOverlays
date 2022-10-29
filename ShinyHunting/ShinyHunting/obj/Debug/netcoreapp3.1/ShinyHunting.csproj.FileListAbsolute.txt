@@ -19,3 +19,25 @@ C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\S
 C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.dll
 C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.pdb
 C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.genruntimeconfig.cache
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\bin\Debug\netcoreapp3.1\ShinyHunting.exe
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\bin\Debug\netcoreapp3.1\ShinyHunting.deps.json
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\bin\Debug\netcoreapp3.1\ShinyHunting.runtimeconfig.json
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\bin\Debug\netcoreapp3.1\ShinyHunting.runtimeconfig.dev.json
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\bin\Debug\netcoreapp3.1\ShinyHunting.dll
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\bin\Debug\netcoreapp3.1\ShinyHunting.pdb
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\bin\Debug\netcoreapp3.1\WpfAnimatedGif.dll
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.csproj.AssemblyReference.cache
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting_MarkupCompile.cache
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting_MarkupCompile.lref
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.g.resources
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.AssemblyInfoInputs.cache
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.AssemblyInfo.cs
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.csproj.CoreCompileInputs.cache
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.csproj.CopyComplete
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.dll
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.pdb
+C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\obj\Debug\netcoreapp3.1\ShinyHunting.genruntimeconfig.cache

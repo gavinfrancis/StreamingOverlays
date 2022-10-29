@@ -198,6 +198,11 @@ namespace ShinyHunting
             {
                 currentCount2.Content = Convert.ToInt32(currentCount2.Content) - 1;
             }
+
+            if (e.Key == Key.Pause)
+            {
+                Application.Current.Shutdown();
+            }
         }
 
     }

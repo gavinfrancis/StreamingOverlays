@@ -6,8 +6,8 @@
       "version": "3.1.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\gavin\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\gavin\\.nuget\\packages"
+      "C:\\Users\\Gavin Francis\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Gavin Francis\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

@@ -8,5 +8,5 @@ Pokemon-2-Height = 200
 Pokemon-2-Width = 215
 Pokemon-2-PosX = 1450
 Pokemon-2-PosY = 735
-Pokemon-1-AnimatedGif = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\huntGraphics\Groudon.gif
-Pokemon-2-AnimatedGif = C:\Users\gavin\OneDrive\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\huntGraphics\Kyogre.gif
+Pokemon-1-AnimatedGif = C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\huntGraphics\Groudon.gif
+Pokemon-2-AnimatedGif = C:\Users\Gavin Francis\Desktop\Twitch\Software\StreamingOverlays\ShinyHunting\ShinyHunting\Graphics\huntGraphics\Kyogre.gif
